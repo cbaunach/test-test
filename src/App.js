@@ -1,18 +1,18 @@
 import { useEffect, useState, useRef } from "react";
-import * as daoBackend from './index.triumvirate.mjs'
+import * as daoBackend from './index.triumvirate.js'
 import { loadStdlib } from "@reach-sh/stdlib";
 import { ALGO_MyAlgoConnect as MyAlgoConnect } from '@reach-sh/stdlib';
 import { ALGO_WalletConnect as WalletConnect } from '@reach-sh/stdlib';
 const stdlib = loadStdlib('ALGO');
 
 function App() {
-  const [contractId, setContractId] = useState(733753968)
+  const [contractId, setContractId] = useState(746394094)
   const [acc, setAcc] = useState(undefined)
   const [message, setMessage] = useState(undefined)
   const [triumCtc, setTriumCtc] = useState(undefined)
   const [triumIndex, setTriumIndex] = useState(undefined)
   const [triumAddrs, setTriumAddrs] = useState([
-    'T3ZLV7LQYV5L4YA5EWKYGMDNFFSW34RAUEYZTXFEDFYCF2P6USRZ5DHJXM',
+    '7QTJQGQSIC7OYHLAIZB6TMDRYBG7SS4CAQGGTWQBHMY32DIKK255UATIW4',
     'RDHFHGJQIWTHL764IDWRA7YB3JJ5LCISRTV2TU6ZFC6TOQZHZ5NJC374GI',
     'YX2QB5KL3RXY5755ZRQ3DAHNY3HH6BE2KK5F73ZXROVTH2NNS7WKYAAPYM',
   ])
@@ -109,7 +109,7 @@ function App() {
       <hr/>
       <div>Input a Trium Member Index corresponding to the addresses whose NoOp proposition you want to support</div>
       <div>
-      0 = 'T3ZLV7LQYV5L4YA5EWKYGMDNFFSW34RAUEYZTXFEDFYCF2P6USRZ5DHJXM'<br/>
+      0 = '7QTJQGQSIC7OYHLAIZB6TMDRYBG7SS4CAQGGTWQBHMY32DIKK255UATIW4'<br/>
       1 = 'RDHFHGJQIWTHL764IDWRA7YB3JJ5LCISRTV2TU6ZFC6TOQZHZ5NJC374GI'<br/>
       2 = 'YX2QB5KL3RXY5755ZRQ3DAHNY3HH6BE2KK5F73ZXROVTH2NNS7WKYAAPYM'
       </div>
